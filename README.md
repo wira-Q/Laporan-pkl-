@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# PKL Website — Sayyid Muhammad P
 
-## Getting Started
+Website laporan PKL di PT Alfahuma Rekaya Teknologi.
 
-First, run the development server:
+## Tech Stack
+
+- **Next.js 15** (App Router)
+- **Tailwind CSS**
+- **Supabase** (database)
+- **Lucide React** (icons)
+- **TypeScript**
+
+## Cara Setup
+
+### 1. Install dependencies
+
+```bash
+npm install
+```
+
+### 2. Setup environment variables
+
+Salin `.env.example` menjadi `.env.local`:
+
+```bash
+cp .env.example .env.local
+```
+
+Isi dengan nilai dari Supabase dashboard (Settings > API).
+
+### 3. Jalankan dev server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Buka [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Deploy ke Vercel
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Push ke GitHub
+2. Import repo di [vercel.com](https://vercel.com)
+3. Tambahkan environment variables Supabase
+4. Klik Deploy
 
-## Learn More
+## Kustomisasi
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Sosial media**: Edit file `src/components/Footer.tsx` — ganti link href dengan akun kamu
+- **Tugas PKL**: Edit array `jobs` di `src/components/JobsSection.tsx`
+- **Timeline**: Edit array `timeline` di `src/components/ExperienceSection.tsx`
+- **Info perusahaan**: Edit `src/components/AboutSection.tsx`

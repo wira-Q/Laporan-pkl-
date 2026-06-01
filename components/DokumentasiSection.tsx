@@ -128,7 +128,7 @@ const docSections = [
     color: '#BE123C',
     single: false,
     images: [
-      { src: 'Mom.png', label: 'MoM' },
+      { src: 'MoM.png', label: 'MoM' },
       { src: 'manualbook.png', label: 'Manual Book' },
       { src: 'testing.png', label: 'Testing' },
     ],

@@ -10,11 +10,57 @@ const skills = [
 ]
 
 const tools = [
-  { name: 'Navicat', desc: 'Database management' },
-  { name: 'Balsamiq', desc: 'UI wireframing' },
-  { name: 'Java', desc: 'Backend language' },
-  { name: 'Maven', desc: 'Build automation' },
-  { name: 'Docx', desc: 'Technical docs' },
+  {
+    name: 'Navicat',
+    desc: 'Database management',
+    detail: [
+      'Selama PKL, saya menggunakan Navicat untuk mengelola database secara langsung, mulai dari melakukan query sederhana hingga debugging data yang bermasalah.',
+      'Saya sering melakukan proses insert, update, dan pengecekan data untuk memastikan data yang digunakan oleh backend tetap konsisten.',
+      'Dalam beberapa kasus, saya juga membantu menelusuri error yang terjadi dari sisi database yang terhubung dengan sistem backend berbasis Java.'
+    ]
+  },
+  {
+    name: 'Balsamiq',
+    desc: 'UI wireframing',
+    detail: [
+      'Saya menggunakan Balsamiq untuk membuat wireframe sebagai gambaran awal sebelum proses development dimulai.',
+      'Wireframe ini membantu tim dalam memahami alur tampilan dan struktur sistem sebelum diimplementasikan ke dalam kode.',
+      'Selain itu, Balsamiq juga digunakan sebagai alat diskusi untuk menyamakan persepsi antara tim developer dan stakeholder.'
+    ]
+  },
+  {
+    name: 'Java',
+    desc: 'Backend language',
+    detail: [
+      'Dalam pengembangan backend, saya menggunakan Java untuk memahami bagaimana sistem berjalan dari sisi server.',
+      'Saya belajar konsep dasar Object-Oriented Programming (OOP) dan bagaimana menggunakannya dalam struktur project nyata.',
+      'Selain itu, saya juga terlibat dalam penambahan dan integrasi API serta memahami bagaimana data diproses dan dikirim ke frontend.'
+    ]
+  },
+  {
+    name: 'Maven',
+    desc: 'Build automation',
+    detail: [
+      'Maven saya gunakan sebagai tools untuk mengelola dependency dalam project Java.',
+      'Saya belajar bagaimana cara build project, mengatur struktur project, serta memastikan semua library yang dibutuhkan dapat berjalan dengan baik.',
+      'Penggunaan Maven membantu saya memahami bagaimana project backend dikelola secara profesional.'
+    ]
+  },
+  {
+    name: 'Docx',
+    desc: 'Technical docx',
+    detail: [
+      'Selama PKL, saya aktif dalam pembuatan berbagai dokumen teknis menggunakan Microsoft Word (Docx).',
+      
+      'Saya membuat MoM (Minutes of Meeting) untuk mencatat hasil diskusi dan keputusan penting dari setiap meeting tim.',
+      
+      'Saya juga terlibat dalam penyusunan SRS (Software Requirements Specification) yang berisi kebutuhan sistem secara detail sebagai acuan pengembangan.',
+      
+      'Selain itu, saya menyusun Manual Book untuk membantu user memahami cara menggunakan sistem dengan jelas.',
+      
+      'Di tahap akhir, saya ikut mendokumentasikan hasil testing untuk memastikan semua fitur berjalan sesuai dengan yang diharapkan.'
+    ]
+  },
 ]
 
 function AnimatedBar({ level }: { level: number }) {
@@ -51,6 +97,8 @@ function AnimatedBar({ level }: { level: number }) {
 }
 
 export default function KompetensiSection() {
+  const [selectedTool, setSelectedTool] = useState<any>(null)
+
   return (
     <section id="kompetensi" className="section-snap flex flex-col" style={{ background: '#1C1917' }}>
       <div className="flex-1 py-20 px-6 pt-24">
@@ -62,6 +110,8 @@ export default function KompetensiSection() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-6 gap-3">
+
+            {/* === SEMUA ATAS TIDAK DIUBAH === */}
 
             <div className="md:col-span-2">
               <div className="rounded-2xl p-8 flex flex-col justify-between" style={{ background: '#F97316', borderRadius: '16px', minHeight: '200px' }}>
@@ -97,12 +147,18 @@ export default function KompetensiSection() {
               </div>
             </div>
 
+            {/* 🔥 CUMA BAGIAN INI DIUBAH */}
             <div className="md:col-span-4">
               <div className="rounded-2xl p-7" style={{ background: '#FBBF24', borderRadius: '16px', minHeight: '120px' }}>
                 <p className="text-xs tracking-[0.15em] uppercase font-medium mb-4" style={{ color: '#92400E' }}>Teknologi yang Dipelajari</p>
                 <div className="flex flex-wrap gap-2">
                   {tools.map((tool) => (
-                    <div key={tool.name} className="flex flex-col px-3 py-2 rounded-lg" style={{ background: 'rgba(255,255,255,0.5)' }}>
+                    <div
+                      key={tool.name}
+                      onClick={() => setSelectedTool(tool)}
+                      className="flex flex-col px-3 py-2 rounded-lg cursor-pointer"
+                      style={{ background: 'rgba(255,255,255,0.5)' }}
+                    >
                       <span className="text-sm font-bold" style={{ color: '#92400E' }}>{tool.name}</span>
                       <span className="text-xs" style={{ color: '#B45309' }}>{tool.desc}</span>
                     </div>
@@ -124,6 +180,36 @@ export default function KompetensiSection() {
           </div>
         </div>
       </div>
+
+      {/* 🔥 MODAL */}
+      {selectedTool && (
+        <div
+          onClick={() => setSelectedTool(null)}
+          className="fixed inset-0 bg-black/50 flex items-center justify-center z-50"
+        >
+          <div
+            onClick={(e) => e.stopPropagation()}
+            className="bg-white rounded-2xl p-6 max-w-md w-full relative"
+          >
+            <button
+              onClick={() => setSelectedTool(null)}
+              className="absolute top-3 right-3"
+            >
+              ✕
+            </button>
+
+            <h2 className="text-xl font-bold mb-2">{selectedTool.name}</h2>
+            <p className="text-sm mb-4">{selectedTool.desc}</p>
+
+            <div className="space-y-2 text-sm">
+              {selectedTool.detail.map((item: string, i: number) => (
+                <p key={i}>• {item}</p>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
+
       <Footer />
     </section>
   )

@@ -18,7 +18,7 @@ export default function LatarBelakangSection() {
                 <span className="text-xs tracking-[0.15em] uppercase font-medium" style={{ color: 'rgba(255,255,255,0.7)' }}>Overview</span>
                 <h2 className="font-display leading-tight" style={{ fontSize: 'clamp(1.6rem,3vw,2rem)', color: '#ffffff' }}>
                   Latar<br />belakang,<br />
-                  <span style={{ fontStyle: 'italic', color: '#FDE68A' }}>tujuan</span>
+                  <span style={{ fontStyle: 'italic', color: '#FDE68A' }}>tujuan,manfaat</span>
                 </h2>
               </div>
             </div>

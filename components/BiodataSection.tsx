@@ -5,6 +5,7 @@ const details = [
   { label: 'Nama Lengkap', value: 'Sayyid Muhammad Prawira' },
   { label: 'Tempat, Tgl Lahir', value: 'Malang, 25 Mei 2009' },
   { label: 'Alamat', value: 'Jl. teluk grajakan, Malang' },
+  { label: 'Latar Belakang Pendidikan', value: 'MI Hasyim Asyari , SMP Negeri 14 Malang' },
   { label: 'Sekolah', value: 'SMK Negeri 8 Malang' },
   { label: 'NIS', value: '5918' },
   { label: 'Kelas / Jurusan', value: 'XI RPL B (Rekayasa Perangkat Lunak)' },
@@ -73,7 +74,7 @@ export default function BiodataSection() {
                   </h2>
                   {/* Deskripsi singkat */}
                   <p className="text-sm mb-4 leading-relaxed" style={{ color: 'rgba(255,255,255,0.8)', lineHeight: 1.6 }}>
-                    Halo kenalin nama gue Sayyid — siswa SMK yang lagi PKL di PT Alfahuma. Passionate di dunia frontend, UI/UX. Masih belajar, tapi selalu penasaran sama hal-hal baru di dunia tech.
+                    Halo kenalin nama saya Sayyid — siswa SMK di smkn 8 malang, yang lagi PKL di PT Alfahuma. Passionate di dunia frontend, UI/UX. Masih belajar, tapi selalu penasaran sama hal-hal baru di dunia tech.
                   </p>
                   <div className="flex flex-wrap gap-2">
                     <span className="text-xs px-3 py-1.5 rounded-lg font-medium" style={{ background: '#FDE68A', color: '#92400E' }}>Project Assistant</span>

@@ -20,7 +20,7 @@ export default function ProfilIduka() {
                 <div>
                   <h2 className="font-display leading-tight mb-2" style={{ fontSize: 'clamp(1.6rem,3vw,2.2rem)', color: '#ffffff' }}>
                     PT Alfahuma<br />
-                    <span style={{ fontStyle: 'italic', color: '#FDE68A' }}>Rekaya Teknologi</span>
+                    <span style={{ fontStyle: 'italic', color: '#FDE68A' }}>Rekayasa Teknologi</span>
                   </h2>
                   <p className="text-sm font-light" style={{ color: 'rgba(255,255,255,0.7)' }}>Pengembangan Website & Aplikasi</p>
                 </div>

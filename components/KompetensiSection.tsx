@@ -4,7 +4,7 @@ import Footer from './Footer'
 
 const skills = [
   { label: 'PA & QA', level: 60, desc: 'Sudah cukup paham proses Project Assistance dan Quality Assurance.' },
-  { label: 'Database', level: 65, desc: 'Mengerti penambahan API, tipe data di Java, dan pengelolaan data.' },
+  { label: 'Backend Development', level: 65, desc: 'Mengerti penambahan API, tipe data di Java, dan pengelolaan data.' },
   { label: 'Bug Fixing', level: 50, desc: 'Mampu identifikasi dan fixing bug secara sistematis.' },
   { label: 'Java', level: 40, desc: 'Memahami dasar pemrograman Java dan integrasi dengan Maven.' },
 ]

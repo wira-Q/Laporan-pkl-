@@ -32,7 +32,7 @@ export default function ProfilIduka() {
               <div className="rounded-2xl p-7 flex flex-col justify-between" style={{ border: '1px solid rgba(249,115,22,0.3)', borderRadius: '16px', minHeight: '200px', background: 'rgba(249,115,22,0.05)' }}>
                 <span className="text-xs tracking-[0.15em] uppercase font-medium" style={{ color: '#FBBF24' }}>Tentang</span>
                 <p className="text-sm font-light leading-relaxed" style={{ color: 'rgba(255,255,255,0.7)', lineHeight: 1.7 }}>
-                  Menyediakan solusi layanan konsultan teknologi informasi dan transformasi digital yang berfokus pada jasa pembuatan software custom, IT Managed Services, Audit IT, hingga Transformasi Digital 4.0. Berlokasi di Jakarta Selatan dan bercabang di Malang, melayani ratusan klien dari perusahaan swasta, lembaga, maupun instansi Pemerintah.
+                  Menyediakan solusi layanan konsultan teknologi informasi dan transformasi digital yang berfokus pada jasa pembuatan software custom, IT Managed Services, Audit IT, hingga Transformasi Digital 4.0. Berlokasi di Jakarta Selatan dan bercabang di Malang, melayani banyak klien dari perusahaan swasta, lembaga, maupun instansi Pemerintah.
                 </p>
               </div>
             </div>

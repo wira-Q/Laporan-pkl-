@@ -42,7 +42,8 @@ export default function LatarBelakangSection() {
                   <span className="text-sm font-semibold" style={{ color: '#92400E' }}>Tujuan PKL</span>
                 </div>
                 <p className="text-sm leading-relaxed" style={{ color: '#78350F', lineHeight: 1.7 }}>
-                  Memperkenalkan siswa pada lingkungan kerja profesional, meningkatkan kompetensi teknis di bidang teknologi informasi, dan membangun sikap profesional sebagai bekal memasuki dunia industri.
+                  Memperkenalkan siswa pada lingkungan kerja profesional, meningkatkan kompetensi di bidang teknologi informasi, serta membangun sikap profesional sebagai bekal memasuki dunia industri.
+                  Selama kegiatan, saya berperan sebagai Programmer Analyst (PA) dan Backend Developer, dengan kompetensi dalam analisis sistem, pengembangan API, implementasi backend, debugging, serta kolaborasi tim menggunakan Git.
                 </p>
               </div>
             </div>
@@ -54,7 +55,7 @@ export default function LatarBelakangSection() {
                   <span className="text-sm font-semibold" style={{ color: '#15803D' }}>Manfaat PKL</span>
                 </div>
                 <p className="text-sm leading-relaxed" style={{ color: '#166534', lineHeight: 1.7 }}>
-                  Pengalaman langsung bekerja dengan tim profesional, penguasaan tools industri seperti Java, Maven, Navicat, dan Balsamiq, serta kemampuan problem solving secara nyata.
+                  Pengalaman langsung bekerja dengan tim profesional, penguasaan tools industri seperti Java, Maven, Navicat, Docx, dan Balsamiq, serta kemampuan problem solving secara nyata.
                 </p>
               </div>
             </div>

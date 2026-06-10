@@ -30,7 +30,7 @@ export default function LatarBelakangSection() {
                   <span className="text-sm font-semibold" style={{ color: '#1C1917' }}>Latar Belakang</span>
                 </div>
                 <p className="text-sm leading-relaxed" style={{ color: '#6B7280', lineHeight: 1.7 }}>
-                  Praktik Kerja Lapangan (PKL) merupakan bagian penting dari kurikulum pendidikan kejuruan yang memberikan kesempatan bagi siswa untuk menerapkan ilmu ke dalam dunia kerja nyata. Kegiatan ini dilaksanakan di PT Alfahuma Rekaya Teknologi, perusahaan yang bergerak di bidang pengembangan website dan aplikasi.
+                  Praktik Kerja Lapangan (PKL) merupakan bagian penting dari kurikulum pendidikan kejuruan yang memberikan kesempatan bagi siswa untuk menerapkan ilmu ke dalam dunia kerja nyata. Kegiatan ini dilaksanakan di PT Alfahuma Rekaya Teknologi, perusahaan yang bergerak di bidang pengembangan website dan aplikasi dan saya menjadi PA dan juga programer backend..
                 </p>
               </div>
             </div>

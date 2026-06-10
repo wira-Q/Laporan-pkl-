@@ -26,7 +26,7 @@ export default function KesimpulanSection() {
                 <div className="md:col-span-2 rounded-2xl p-7" style={{ background: '#ffffff', border: '1px solid #FDE68A', borderRadius: '16px', minHeight: '160px' }}>
                   <p className="text-xs tracking-[0.15em] uppercase font-medium mb-3" style={{ color: '#F97316' }}>Kesimpulan</p>
                   <p className="text-sm leading-relaxed" style={{ color: '#6B7280', lineHeight: 1.7 }}>
-                    Selama 6 bulan PKL di PT Alfahuma Rekaya Teknologi, banyak ilmu dan pengalaman berharga diperoleh. PKL ini berhasil meningkatkan kompetensi teknis dan non-teknis sebagai bekal memasuki dunia kerja.
+                    Selama 6 bulan PKL di PT Alfahuma Rekaya Teknologi, banyak ilmu dan pengalaman berharga diperoleh. PKL ini berhasil meningkatkan kompetensi teknis seperti backend,pembuaatan dokumen dan untuk non-teknis seperti cara berkomunikasi dengan tim sebagai bekal memasuki dunia kerja.
                   </p>
                 </div>
               </div>
@@ -36,7 +36,7 @@ export default function KesimpulanSection() {
             <div className="rounded-2xl p-7" style={{ background: '#FBBF24', borderRadius: '16px', minHeight: '160px' }}>
               <p className="text-xs tracking-[0.15em] uppercase font-medium mb-3" style={{ color: '#92400E' }}>Kesan</p>
               <p className="text-sm leading-relaxed" style={{ color: '#78350F', lineHeight: 1.7 }}>
-                PKL di PT Alfahuma memberikan kesan sangat positif. Lingkungan kerja profesional namun nyaman membuat proses belajar menjadi menyenangkan dan produktif.
+                PKL di PT Alfahuma memberikan kesan sangat positif. Lingkungan kerja profesional namun nyaman membuat proses belajar menjadi menyenangkan dan menambahkan banyak  kompetensi baru yang berguna contoh nya seperti backend development, pembuatan dokumen dan komunikasi.
               </p>
             </div>
 

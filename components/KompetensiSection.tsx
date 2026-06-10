@@ -33,7 +33,7 @@ const tools = [
     desc: 'Backend language',
     detail: [
       'Dalam pengembangan backend, saya menggunakan Java untuk memahami bagaimana sistem berjalan dari sisi server.',
-      'Saya belajar konsep dasar Object-Oriented Programming (OOP) dan bagaimana menggunakannya dalam struktur project nyata.',
+      'Saya juga belajar bagaimana menggunakannya dalam struktur project nyata.',
       'Selain itu, saya juga terlibat dalam penambahan dan integrasi API serta memahami bagaimana data diproses dan dikirim ke frontend.'
     ]
   },
